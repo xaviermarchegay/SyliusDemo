@@ -1,0 +1,10 @@
+.PHONY: yarn-build yarn-install yarn-update
+
+yarn-build:
+	docker-compose run --rm node yarn build
+
+yarn-install:
+	docker-compose run --rm node yarn install
+
+yarn-update:
+	docker-compose run --rm node yarn upgrade-interactive

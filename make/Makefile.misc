@@ -1,0 +1,13 @@
+.PHONY: phpstan phpinsights psalm psalm-full
+
+phpstan:
+	docker-compose exec --user www-data php-fpm /bin/bash -c "php -dmemory_limit=-1 vendor/bin/phpstan analyze src/ --level max"
+
+psalm:
+	docker-compose exec --user www-data php-fpm /bin/bash -c "php -dmemory_limit=-1 vendor/bin/psalm"
+
+psalm-full:
+	docker-compose exec --user www-data php-fpm /bin/bash -c "php -dmemory_limit=-1 vendor/bin/psalm --show-info=true"
+
+rector:
+	docker-compose exec --user www-data php-fpm /bin/bash -c "php -dmemory_limit=-1 vendor/bin/rector --dry-run"
