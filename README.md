@@ -1,5 +1,12 @@
-# SyliusDemo
+# Sylius
 Sylius demo with a bundle of useful plugins
+
+## Demo
+* Front Office: https://sylius.piconerd.com/en_US/
+* Back Office: https://sylius.piconerd.com/admin/ (sylius / sylius)
+* Mailhog: http://sylius.piconerd.com:8025/
+
+## Plugins
 
 ### Invoicing
 
