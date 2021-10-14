@@ -10,7 +10,7 @@ ps:
 	docker-compose ps
 
 start:
-	docker-compose up --remove-orphans -d nginx php-fpm db redis
+	docker-compose up --remove-orphans -d nginx php-fpm db redis mailhog
 
 start-dev:
 	docker-compose up -d
